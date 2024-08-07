@@ -1,0 +1,21 @@
+{
+    "name": "lenov/birthdayapp-backend",
+    "description": "Birthday Reminder Application Backend",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin",
+            "email": "Martin@testmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "realm/realm": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lenov\\Backend\\": "src/"
+        }
+    }
+}
