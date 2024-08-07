@@ -1,0 +1,40 @@
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-day {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.calendar-day.family {
+    background-color: #ffccbc;
+}
+
+.calendar-day.friends {
+    background-color: #b3e5fc;
+}
+
+.calendar-day.arbeitskollegen {
+    background-color: #c8e6c9;
+}
+
+.calendar-day:hover .tooltip {
+    display: block;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 10;
+}
